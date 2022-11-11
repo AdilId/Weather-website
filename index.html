@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="site-information">
+            <div class="heading-and-icon">
+                <i class="fa-solid fa-cloud-moon fa-2x"></i>
+                <h2>Weather Website</h2>
+            </div>
+            <div class="city-name">
+                <div class="date-and-name-deg">
+                    <div class="deg"></div>
+                    <span class="name"></span>
+                    <span class="date"></span>
+                </div>
+                <div class="status">
+                    <img src="" alt="">
+                    <span class="status"></span>
+                </div>
+            </div>
+        </div>
+        <div class="city-weather-information">
+            <input type="text" placeholder="Enter A Country/City Name">
+            <div class="wrong-name"></div>
+            <div class="units">
+                <div class="check">
+                    <input id="deg-name-one" type="radio" name="unit" value="c">
+                    <label for="deg-name-one">Celsius</label>
+                    <input id="deg-name-two" type="radio" name="unit" value="f">
+                    <label for="deg-name-two">Fahrenheit</label>
+                    <input id="deg-name-last" type="radio" name="unit" value="k">
+                    <label for="deg-name-last">Kelvin</label>
+                </div>
+                <div class="send">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="details">
+                <h3>Weather details</h3>
+                <div class="info">
+                    <div class="country">
+                        Country
+                        <span class="country-name"></span>
+                    </div>
+                    <div class="clouds">
+                        Clouds
+                        <img src="" alt="">
+                    </div>
+                    <div class="humidity">
+                        Humidity
+                        <span class="h-level"></span>
+                    </div>
+                    <div class="wind">
+                        Wind
+                        <span class="w-speed"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
